@@ -1,0 +1,171 @@
+.header{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    padding: 2px;
+    background-color: aliceblue;
+    margin-left: 10px;
+    border-radius: 15px;
+}
+
+.header__content{
+    display: grid;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    align-items: center;
+}
+
+.header__name{
+    font-size:large;
+    font-weight:600;
+}
+
+.header__info{
+    opacity: 0.8;
+    font-size: small;
+}
+
+.header__img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.navbar__options{
+    position: absolute;
+    right: 2em;
+}
+
+.navbar__options i{
+    font-size: larger;
+    color: rgb(0, 110, 255);
+    height: 3em;
+    margin: 10px;
+}
+
+
+.conversation{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.chat{
+    width: 100%;
+}
+
+.chat__outer:nth-of-type(even){
+    text-align: right;
+}
+
+
+
+.chat__outer:nth-of-type(even) .chat__inner{
+    display: inline-block;
+    text-align: right;
+    background-color: #fbfbd9;
+    padding: 10px;
+    border-radius: 25px;
+    width:fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.chat__outer:nth-of-type(odd) .chat__inner{
+    display: inline-block;
+    text-align: left;
+    background-color:aliceblue;
+    padding: 10px;
+    border-radius: 25px;
+    width:fit-content;
+    padding: 10px;
+    margin: 10px;
+}
+
+.chat__message{
+    display: block;
+}
+
+.chat__timeStamp{
+    display: inline-block;
+    font-size: smaller;
+    opacity: 0.5;
+}
+
+
+
+.footer{
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 70%;
+    z-index: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: large;
+}
+
+
+
+.footer__input{
+    border: 1px solid grey;
+    display: inline;
+    text-align: right;
+    width: 90%;
+    border-radius: 25px;
+    opacity: 0.5;
+    height: 2em;
+}
+
+.footer__outer{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer__outer__btn{
+    border-radius: 50%;
+    margin-right: 5px;
+    border: 1px solid grey;
+    background-color: white;
+    font-size: large;
+    opacity: 0.5;
+    height: 2em;
+    width: 2em;
+}
+
+#footer__submit__icon{
+    border: none;
+    background-color:azure;
+    border-radius: 50%;
+    font-size: 1.5em;
+    opacity: 0.5;
+}
+
+#input{
+    width: 90%;
+    display: inline-block;
+    font-size: larger;
+    text-align: left;
+
+}
+
+@media only screen and (max-width: 650px) {
+
+    .navbar__options{
+        position: absolute;
+        right: 0.5em;
+    }
+
+    .footer{
+        width: 100%;
+        display: flex;
+    flex-wrap: nowrap;
+    }
+
+}
+

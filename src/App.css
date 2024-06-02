@@ -1,0 +1,39 @@
+.app{
+    width: 100%;
+    display: flex;
+
+}
+
+.app__contacts{
+    width: 30%;
+    margin-left: 10px;
+    float: left;
+}
+
+
+.app__conversation{
+    margin: 20px;
+    margin-right: 30px;
+    width: 70%;
+    border-left: 1px solid antiquewhite;
+}
+
+
+.contacts__heading{
+    font-weight: 400;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .app__contacts {
+        width: 100%;
+        margin-right: 5px;
+        margin-left: 0;
+    }
+    .app__conversation{
+        display: none;
+        width: 100%;
+        border-left: 0;
+        margin: 10px;
+    }
+  }
